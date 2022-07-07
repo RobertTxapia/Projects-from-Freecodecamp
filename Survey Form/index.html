@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
     <title>Survey Form</title>
@@ -22,18 +21,18 @@
 
         <form id="survey-form">
             <div class="form-group">
-                <label for="name" class="label-name">Nombre</label>
+                <label for="name" id="name-label">Nombre</label>
                 <input type="text" name="name" id="name" class="form-control" placeholder="Introduzca su Nombre" required>
             </div>
     
             <div class="form-group">
-                <label for="email" class="label-email">Email</label>
+                <label for="email" id="email-label">Email</label>
                 <input type="email" name="email" id="email" class="form-control" placeholder="Introduzca su Email" required>
             </div>
     
             <div class="form-group">
-                <label for="number" class="label-age">Años<span class="clue">(opcional)</span></label>
-                <input type="number" name="age" id="number" class="form-control" placeholder="Años" min="15" max="99" >
+                <label for="number" id="number-label"> ¿Cuánto tiempo llevas jugando videojuesgos?<span class="span">(opcional)</span></label>
+                <input type="number" name="age" id="number" class="form-control" placeholder="Años" min="1" max="99" >
             </div>
     
             <!--select compañia--> 
@@ -103,19 +102,19 @@
                 <input type="checkbox" name="2022" id="mostanticipatedgames" value="Starfield" class="input-checkbox">Starfield 
                </label> 
     
-               <label for="mostanticipatedgames">
+               <label>
                 <input type="checkbox" name="2022" id="mostanticipatedgames" value="GrandTheftAutoVI" class="input-checkbox">Grand Theft Auto VI 
                </label> 
     
-               <label for="mostanticipatedgames">
+               <label>
                 <input type="checkbox" name="2022" id="mostanticipatedgames" value="ARKII" class="input-checkbox">ARK II
                </label> 
     
-               <label for="mostanticipatedgames">
+               <label>
                 <input type="checkbox" name="2022" id="mostanticipatedgames" value="Bayonetta3" class="input-checkbox">Bayonetta 3
                </label> 
     
-               <label for="mostanticipatedgames">
+               <label>
                 <input type="checkbox" name="2022" name="2022" id="mostanticipatedgames" value="DyingLight2StayHuman" class="input-checkbox">Dying Light 2 Stay Human
                </label> 
 
@@ -131,7 +130,7 @@
             <!--textarea-->
 
             <div class="form-group">
-                <p>¿Cuál fue tu primer videojuego?</p>
+                <p>¿Cuál fue tu primer videojuego y consola?</p>
                 <textarea name="comment" id="comments"  class="input-textarea" placeholder="Enter your comment here..."></textarea>
             </div> 
 
