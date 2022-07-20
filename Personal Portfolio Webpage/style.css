@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    margin-right: 2.3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list__nav {
+    display: flex;
+    
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.nav__link {
+    font-weight: 500;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.nav__link:hover {
+    color: #84a98c;
+}
+
+.nav__logo {
+    color: #43c2df;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 20px;
+}
+
+
+
+
+
+#welcome-section {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://w.wallhaven.cc/full/yj/wallhaven-yj2z8k.png");
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    align-items: center;
+}
+
+
+.hero__title {
+    font-weight: 700;
+    font-size: 3.5em;
+
+}
+
+.hero__paragraph {
+    font-style: italic;
+    font-weight: 300;
+    color: #84a98c;
+    margin-top: -50px;
+}
+
+.projects__title {
+    font-size: 1.9em;
+}
+
+
+.projects-section {
+    text-align: center;
+    padding: 30px 2rem;
+    background: #2F3E46;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-gap: 2rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 6rem;
+  }
+  
+  m
+  
+  .project {
+    width: 300px;
+    background-color: #182425;
+    border-radius: 2px;
+  }
+  
+  
+  .project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    padding: 10px 0.5rem;
+    color: #fff;
+  }
+  
+  .project__btn {
+    display: inline-block;
+    padding: 10px 2rem;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #43c2df;
+  }
+  
+  
+@media (max-width:760px)  {
+
+    .hero__title {
+        font-size: 3.1em;
+    }
+}
+
+
+@media (max-width:760px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        background-color: #354F52;
+    }
+}
+
+
+@media (max-width:760px) {
+    .projects-grid {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+    }
+}
